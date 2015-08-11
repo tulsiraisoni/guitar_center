@@ -46,8 +46,7 @@
 
 <!-- End of NAv Bar -->
 
-<!-- Carousel -->
-	<div >
+<div >
         <carousel interval="myInterval" >
              <slide ng-repeat="slide in slides0" active="slide.active">
             <img ng-src="{{slide.image}}">
@@ -58,90 +57,67 @@
        </carousel>
 
 </div>
-</header>
+	</header>
 
 
-<!-- Product page -->
+
 	<div class="page" id="products">
 		<div class="content container">
 			<h2>Products</h2>
 			<div class="row">
-				<article class="service col-sm-6">
-					<img class="icon" src="images/33.jpg" alt="Icon">
+				<article class="service col-sm-4">
+			 <img src="{{guitarPath}}"  class="icon img-responsive" >
 					<h3>Gibson</h3>
-					<p>The ES-225 was first introduced in 1956 as the lower-cost
-						sibling of the “thinline” Byrdland and ES-350T guitars of the year
-						before—fully hollow archtops with built-in pickups and
-						electronics, designed for a new generation of players.</p>
+					<p>Price: ${{price}}</p>
+					<button class="btn btn-success" ng-click="order">Buy</button>
 				</article>
-
-
-				<article class="service col-sm-6">
-					<img class="icon" src="images/44.jpg" alt="Icon">
+				<article class="service col-sm-4">
+					 <img src="{{guitarPath1}}"  class="icon img-responsive" >
 					<h3>Fender</h3>
-					<p>Electrifying Mexican quartet Maná is the world’s biggest
-						Latin rock band, thanks in no small part to the masterful guitar
-						work of Sergio Vallín. Fender and Vallín have now collaborated
-						closely on the Sergio Vallín Signature guitar model, one of the
-						most distinctive instruments in the Fender Artist series.</p>
+					<p>Price: ${{price1}}</p>
+					<button class="btn btn-success">Buy</button>
 				</article>
-
-				<article class="service col-sm-6">
-					<img class="icon" src="images/88.jpg" alt="Icon">
+				<article class="service col-sm-4">
+					 <img src="{{guitarPath}}"  class="icon img-responsive" >
 					<h3>Ibanez</h3>
-					<p>Built for versatility, the SA is musical chameleon. From
-						clean rhythm to crunchy blues, all the way out to the most molten
-						of metal, the SA shines in every genre. Its arched top emphasizes
-						the beauty of the SA's many visual treatments, from straight-ahead
-						solid colors to a stunning quilted grained maple with transparent
-						finishes.</p>
+					<p>Price: ${{price2}}</p>
+					<button class="btn btn-success">Buy</button>
 				</article>
-
-				<article class="service col-sm-6">
-					<img class="icon" src="images/66.jpg" alt="Icon">
+			</div>
+			<br/><br/>
+			<div class="row">
+				<article class="service col-sm-4">
+					 <img src="{{guitarPath3}}"  class="icon img-responsive" >
 					<h3>Epiphone</h3>
-					<p>The DR-100 has long been our best selling acoustic guitar
-						with the look, sound, and build quality that first time players
-						and professionals expect to find when they pick up an Epiphone.
-						The dreadnought is considered the classic go-to shape for
-						bluegrass, folk, rock, country, and everything in-between.</p>
+					<p>Price: ${{price3}}</p>
+					<button class="btn btn-success">Buy</button>
 				</article>
-
-				<article class="service col-sm-6">
-					<img class="icon" src="images/77.jpg" alt="Icon">
+				<article class="service col-sm-4">
+					 <img src="{{guitarPath4}}"  class="icon img-responsive" >
 					<h3>Yamaha</h3>
-					<p>The finest craftmanship and a smaller folk style body make
-						the FS series an individual alternative to the larger bodied FG.
-						Precise, smooth response and a sweet, focused tone make this a
-						great choice for recording or fingerpicking.</p>
+					<p>Price: ${{price4}}</p>
+					<button class="btn btn-success">Buy</button>
+				</article>
+				<article class="service col-sm-4">
+					 <img src="{{guitarPath5}}"  class="icon img-responsive" >
+					<h3>Yamaha</h3>
+					<p>Price: ${{price5}}</p>
+					<button class="btn btn-success" ng-click="order">Buy</button>
 				</article>
 			</div>
 		</div>
 	</div>
-
-
-
 	<!-- form Page  -->
-
-
-	<div class="page" id="myForm">
+	<div class="page" id="order" ng-show="orderForm">
 		<div class="content container">
 			<h2>Orders</h2>
-
-
 			<div class="form-group">
 				<label class="control-label col-sm-2">FirstName </label>
 				<div class="col-sm-4">
-					<input type="text" name="user" class="form-control"
-						placeholder="Enter your FirstName" ng-model="user" required> <span
-						style="color: red"
-						ng-show="myForm.user.$dirty && myForm.user.$invalid"> <span
-						ng-show="myForm.user.$error.required">Username is required.</span>
-					</span>
-					</p>
+					<input type="text" class="form-control"
+						placeholder="Enter your FirstName">
 				</div>
 			</div>
-
 			<div class="form-group">
 				<label class="control-label col-sm-2">LastName </label>
 				<div class="col-sm-4">
@@ -149,41 +125,30 @@
 						placeholder="Enter your LastName">
 				</div>
 			</div>
-
 			<div class="form-group">
 				<label class="control-label col-sm-2"> Email</label>
 				<div class="col-sm-4">
-					<input type="email" class="form-control" placeholder="Enter email" ng-model="email" required> <span style="color: red"
-						ng-show="myForm.email.$dirty && myForm.email.$invalid"> <span
-						ng-show="myForm.email.$error.required">Email is required.</span> <span
-						ng-show="myForm.email.$error.email">Invalid email address.</span>
-					</span>
-
+					<input type="email" class="form-control" placeholder="Enter email">
 				</div>
 			</div>
-
 			<div class="form-group">
 				<label class="control-label col-sm-2">Addrress </label>
 				<div class="col-sm-4">
 					<input type="text" class="form-control" placeholder="Street">
 				</div>
 			</div>
-
 			<div class="form-group">
 				<label class="control-label col-sm-2"> Apt/Suite </label>
 				<div class="col-sm-4">
 					<input type="text" class="form-control" placeholder="Apt/Suite">
 				</div>
 			</div>
-
 			<div class="form-group">
 				<label class="control-label col-sm-2"> ZipCode </label>
 				<div class="col-sm-4">
 					<input type="text" class="form-control" placeholder="Zip">
 				</div>
 			</div>
-
-
 			<!--  <div class="container">
   <form class="form-horizontal" role="form"> -->
 			<div class="container">
@@ -249,14 +214,13 @@
 					<div class="form-group">
 						<label class="col-sm-3 control-label" for="cvv">Card CVV</label>
 						<div class="col-sm-3">
-							<input type="number" class="form-control" name="cvv" id="cvv"
-								placeholder="Security Code" ng-maxlength=3 required />
+							<input type="text" class="form-control" name="cvv" id="cvv"
+								placeholder="Security Code">
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="col-sm-offset-2 col-sm-10">
-							<button type="button" class="btn btn-success">Review
-								Order</button>
+							<button type="button" class="btn btn-success">Review Order</button>
 						</div>
 					</div>
 
