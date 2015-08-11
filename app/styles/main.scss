@@ -1,0 +1,322 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+
+
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 0px;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 20px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+
+//colors
+$color_suva_gray_approx: #888888;
+$color_valencia_approx: #cf4647;
+$black:  black;
+$color_froly_approx: #fa787e;
+$color_pastel_green_approx: #78fa89;
+$white: white;
+$color_wild_sand_approx: #f5f5f5;
+$color_astral_approx: #2c7bb0;
+$blue:  blue;
+
+//urls
+$url_0: url(bg.jpg);
+
+#reviewdiv {
+  //Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 10px 10px 5px $color_suva_gray_approx;
+height:600px;
+
+}
+.dropdown-menu {
+  //Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 10px 10px 5px $color_suva_gray_approx;
+}
+.imageholder {
+  height: 420px;
+  width: 750px;
+  position: relative;
+}
+.buttonholder {
+  position: absolute;
+  right: 628px;
+  top: 481px;
+}
+.statusholder {
+  position: absolute;
+  right: 205px;
+  top: 6px;
+  height: 200px;
+  width: 300px;
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+}
+.productinfoholder {
+  position: absolute;
+  right: 930px;
+  top: 586px;
+  height: 400px;
+  width: 300px;
+  bottom: 5px;
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+}
+.shippingdiv {
+  position: absolute;
+  height: 440px;
+  width: 300px;
+  top: 586px;
+  right: 5px;
+  left: 295px;
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+}
+.customerdiv {
+  position: absolute;
+  right: 396px;
+  top: 586px;
+  height: 440px;
+  width: 350px;
+  bottom: 5px;
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+}
+.buybutton {
+  top: 327px;
+  right: 215px;
+  left: 800pxpx;
+  display: block;
+  width: 100px;
+  height: 100px;
+  line-height: 50px;
+  border: 2px solid $color_wild_sand_approx;
+  //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+  border-radius: 50%;
+  color: $color_wild_sand_approx;
+  text-align: center;
+  text-decoration: none;
+  background: $color_astral_approx;
+  //Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 0 0 3px $blue;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  right: 351px;
+  top: 209px;
+}
+.aboutdiv {
+  background-image: $url_0;
+}
+.detailsholder {
+  background-color: $white;
+  height: 500px;
+  width: 980;
+}
+.guitarpic {
+  height: 400;
+  width: 267;
+  position: absolute;
+  right: 17px;
+  top: 433px;
+}
+.producthidepic {
+  height: 400px;
+  width: 219px;
+  position: absolute;
+  right: 976px;
+  top: 665px;
+}
+.shippinghidepic {
+  height: 400px;
+  width: 219px;
+  position: absolute;
+  right: 725px;
+  top: 665px;
+}
+.customerhidepic {
+  height: 400px;
+  width: 219px;
+  position: absolute;
+  right: 471px;
+  top: 665px;
+}
+.saleimage {
+  height: 175px;
+  width: 250px;
+  position: absolute;
+  right: 201px;
+  top: 532px;
+}
+.servicediv {
+  height: 600px;
+  width: 1100px;
+}
+.servicediv1 {
+  height: 260px;
+  width: 700px;
+}
+.aboutimageholder {
+  height: 600px;
+  width: 400px;
+  position: absolute;
+  right: 152px;
+  top: 37px;
+}
+.promopic1 {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: 1049px;
+  top: 1102px;
+}
+.promopic2 {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: 811px;
+  top: 1102px;
+}
+.promopic3 {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: 563px;
+  top: 1102px;
+}
+.promopic4 {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: 315px;
+  top: 1102px;
+}
+.promopic5 {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: 63px;
+  top: 1102px;
+}
+.imagereviewdiv {
+  height: 800px;
+  width: 400px;
+  position: absolute;
+  right: 135px;
+  top: 32px;
+}
+button:hover {
+  background: $color_valencia_approx;
+}
+.css-form input {
+  &.ng-invalid.ng-touched {
+    background-color: $color_froly_approx;
+  }
+  &.ng-valid.ng-touched {
+    background-color: $color_pastel_green_approx;
+  }
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+@media screen and (max-width:992px){
+  .buybutton{
+  width:50%;
+  height:auto;
+  }
+}
+
+
+.pricetag{
+  color:red;
+}
+
+.stockstatus{
+  color:blue;
+}

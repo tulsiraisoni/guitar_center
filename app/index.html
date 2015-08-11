@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>S&K Guitar Center</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- endbuild -->
+
+</head>
+<body ng-app="guitarCenterApp"  class="body" >
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+      <!-- Add your site or application content here -->
+      <div class="header">
+        <div class=" nav navbar-inverse " role="navigation">
+          <a class="navbar-brand" href="#main">
+            <img alt="Brand" src="images/brand.png">
+          </a>
+          <div class=" " >
+            <span class="dropdown ">
+
+              <button class="btn-lg btn-primary dropdown-toggle"  data-toggle="dropdown"><span class="glyphicon glyphicon-th-list"></span>
+              </button>
+
+              <ul class=" dropdown-menu  ">
+                <li ><a href="#">ELECTRIC</a></li>
+                <li><a href="#">ACOUSTIC</a></li>
+                <li><a href="#">BASS GUITARS</a></li>
+                <li><a href="#"> GIBSON GUITARS</a></li>
+
+              </ul>
+            </span>
+
+            <a href="#/"><button class="btn btn-primary "  >Home </button></a>
+            <a href="#/about"><button class="btn btn-primary "  style="display: inline-block">About US </button></a>
+            <a href="#/contact"><button class="btn btn-primary "  >Contact US </button></a>
+
+            <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+
+
+
+
+          </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div  class="">
+
+          <div class="col-md-0"></div>
+          <div ng-view="" class="col-md-12"></div>
+          <div class="col-md-0"></div>
+          <div class="row"> </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="navbar navbar-inverse navbar-fixed-bottom  ">
+
+
+
+          <ul class="nav navbar-nav">
+            <li><a href="#">Browse Our Library</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">Our Partners</a></li>
+            <li><a href="#">User Review</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">© S&K Guitar Center 2015</a></li>
+          </ul>
+
+
+        </div>
+
+<!--
+<nav class="navbar navbar-inverse navbar-fixed-bottom" style="color:white">
+
+      <div class="container">
+        <p> <i> ©  2015 All RIght Reserved To S&K Guitar Center </i> </p>
+      </div>
+
+</nav>
+-->
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+<script>
+!function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+ (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+ r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+}(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-XXXXX-X');
+ga('send', 'pageview');
+</script>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/about.js"></script>
+<script src="scripts/controllers/buypage.js"></script>
+<script src="scripts/controllers/conformation.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+<!-- endbuild -->
+</body>
+</html>

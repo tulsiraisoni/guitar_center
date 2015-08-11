@@ -1,0 +1,87 @@
+
+
+
+<br/><br/>
+<h3><strong>Best-Selling Guitars</strong></h3>
+<!--status holder creaded with given class name -->
+<div class="statusholder">
+  <h3 class="pricetag"> <strong>Price ${{pricechange}} </strong></h3>
+  <h4> Stock {{stockstatus}}</h4>
+  <h3 class="stockstatus"><strong>{{noofitem}} Piece</strong></h3>
+</div>
+
+<!--image path called from json data -->
+
+<div  class="imageholder img-responsive" style="width:750; height:420" align="center"> <img src="{{guitarPath}}"  class="img-responsive" ></div>
+<br/><br/>
+<!-- previouse and Next Button function named , and simple bootstrap glyphicon used -->
+<div class="buttonholder" align="center">
+  <button ng-click="prev() " class="btn btn-danger" id="prebutton" > <span class="glyphicon glyphicon-triangle-left" ></button>
+  <button ng-click="nxt()" class=" btn btn-danger" id="nextbutton" > <span class="glyphicon glyphicon-triangle-right" ></span></button>
+</div>
+
+<!-- product details, shipping details and customer review displayed in this div-->
+<div  class="detailsholder" >
+  <div class="col-md-0"></div>
+  <divclass="col-md-12">
+  <div class="productinfoholder" >
+    <h3  ng-click="productinfo()" style="color:red"><strong >Product Info</strong> (<span class="glyphicon glyphicon-plus"  ng-hide="plus"></span><span class="glyphicon glyphicon-minus" ng-hide="minus"></span>)</h3>
+
+
+
+    <div ng-hide="productDescription" >
+
+
+      <h4  > <i>{{productchange}}</i></h4>
+
+    </div>
+  </div>
+
+
+
+  <div class="shippingdiv" >
+    <h3 ng-click="shippingInfo()" style="color:red"> <strong >Shipping Info </strong> (<span class="glyphicon glyphicon-plus" ng-hide="plus1"></span><span class="glyphicon glyphicon-minus" ng-hide="minus1"></span>)</h3>
+
+    <div ng-hide="shippingInfodiv">
+
+
+      <h4 > <i>{{shippingchange}}</i></h4>
+
+    </div>
+  </div>
+
+  <div class="customerdiv">
+
+    <h3 ng-click="customerreviews()" style="color:red"><strong >Customer Review</strong> (<span class="glyphicon glyphicon-plus" ng-hide="plus2" ></span><span class="glyphicon glyphicon-minus" ng-hide="minus2"></span>)</h3>
+
+
+    <div ng-hide="customerreviewsdiv" >
+
+     <h4 > <i> {{reviewchange}}</i></h4>
+
+   </div>
+
+ </div>
+ <br/> <br/>
+<!-- Buy Button creaded and function name given-->
+
+ <a href="#/buypage"><button class=" buybutton"  ng-click="buy(ind)" >Buy <span class="glyphicon glyphicon-ok"></span>
+ </button></a>
+
+
+ <div class="guitarpic">
+  <img src="images/10.jpg">
+</div>
+
+<!-- some picture displayed when product info, shipping info and customer review  hide-->
+
+<div class="producthidepic" ng-hide="apic"><img src="images/a.jpg"></div>
+<div class="shippinghidepic" ng-hide="cpic"><img src="images/c.jpg"></div>
+<div class="customerhidepic" ng-hide="bpic"><img src="images/b.jpg"></div>
+<div class="saleimage"><img src="images/sale.jpg"></div>
+</div>
+<div class="col-md-0"></div>
+</div>
+
+
+
