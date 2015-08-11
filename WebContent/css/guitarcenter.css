@@ -92,7 +92,7 @@ and (max-width: 768px) {
 
 #products {
 	background-color:#D1D1E0;
-	background-image: linear-gradient(to bottom, #FAFAFA, #CFCFCF);
+	background-image: linear-gradient(to bottom, #FDFDFD, #FCFCFC);
 	border-top: 20px solid rgba(238, 200, 86, .5);
     margin: 0px 0;
     text-align: center;

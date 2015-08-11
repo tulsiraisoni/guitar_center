@@ -15,7 +15,7 @@ $scope.orderForm=false;
     },
 
      {
-    image: 'images/1.jpg'
+    image: 'images/222.jpeg'
     }
   ];
 
