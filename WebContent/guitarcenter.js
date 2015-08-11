@@ -1,9 +1,7 @@
+var app=angular.module('myApp',[ 'ui.bootstrap']);
+app.controller('myCtrl', function ($scope) {
 
-
-angular.module('myApp').controller('MyCtrl', function ($scope) {
-
-    $scope.x="test";
-
+alert("hello");
     $scope.myInterval = 3000;
     $scope.slides0 = [
     {
